@@ -1,6 +1,6 @@
 create table users
 (
-	"user" text
+	acc text
 		constraint users_pk
 			primary key,
 	password text not null
@@ -13,7 +13,7 @@ create table words
             primary key,
     word          text    not null,
     transcription text,
-    "user"        integer not null
+    acc        integer not null
 );
 
 create table phrases
@@ -22,7 +22,7 @@ create table phrases
 		constraint phrases_pk
 			primary key,
 	phrase text not null,
-	"user" text not null
+	acc text not null
 );
 
 create table dictionary

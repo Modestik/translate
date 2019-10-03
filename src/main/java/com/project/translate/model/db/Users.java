@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Users {
 
     @Id
-    private String user;
+    private String acc;
     @Column
     private String password;
 }
